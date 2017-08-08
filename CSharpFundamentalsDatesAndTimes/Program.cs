@@ -6,7 +6,10 @@ namespace CSharpFundamentalsDatesAndTimes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DateTime myValue = DateTime.Now;
+            Console.WriteLine(myValue.ToString());
+
+            Console.ReadLine();
         }
     }
 }
