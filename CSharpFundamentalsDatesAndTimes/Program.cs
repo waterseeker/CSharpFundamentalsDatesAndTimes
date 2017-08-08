@@ -39,6 +39,8 @@ namespace CSharpFundamentalsDatesAndTimes
             //display the date 42 days ago
             Console.WriteLine("Fourty-two days ago it was " + myValue.AddDays(-42).ToString("D") + ".");
 
+            //display just the month number
+            Console.WriteLine(myValue.Month.ToString());
 
             Console.ReadLine();
         }
