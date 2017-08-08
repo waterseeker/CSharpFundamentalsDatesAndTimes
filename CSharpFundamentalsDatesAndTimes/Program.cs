@@ -46,6 +46,15 @@ namespace CSharpFundamentalsDatesAndTimes
             DateTime birthdayOfBob = new DateTime(1969, 12, 7);
             Console.WriteLine("Bob's birthday was on " + birthdayOfBob.ToString("D") + "." + "\nThat was a " + birthdayOfBob.DayOfWeek + ".");
 
+
+            DateTime firstDay = new DateTime(1, 1, 1);
+            Console.WriteLine("The first day of the year 1 was a " + firstDay.DayOfWeek.ToString() + ".");
+
+            //finding how much time has elapsed between two points in time
+            DateTime birthdayOfLotsOfPeople = DateTime.Parse("12/13/13");
+            TimeSpan lotsOfPeoplesAge = DateTime.Now.Subtract(birthdayOfLotsOfPeople);
+            Console.WriteLine("It has been " + lotsOfPeoplesAge.TotalDays + " days since a lot of people were born.");
+
             Console.ReadLine();
         }
     }
