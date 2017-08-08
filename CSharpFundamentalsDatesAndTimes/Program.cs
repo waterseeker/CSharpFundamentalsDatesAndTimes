@@ -33,6 +33,8 @@ namespace CSharpFundamentalsDatesAndTimes
             //display the date 3 days from now
             Console.WriteLine("The date three days from now will be " + myValue.AddDays(3).ToString("D"));
 
+            //display the time seven hours from now
+            Console.WriteLine("Seven hours from now, the time will be " + myValue.AddHours(7).ToString("T"));
 
             Console.ReadLine();
         }
