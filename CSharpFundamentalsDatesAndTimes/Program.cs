@@ -36,6 +36,10 @@ namespace CSharpFundamentalsDatesAndTimes
             //display the time seven hours from now
             Console.WriteLine("Seven hours from now, the time will be " + myValue.AddHours(7).ToString("T"));
 
+            //display the date 42 days ago
+            Console.WriteLine("Fourty-two days ago it was " + myValue.AddDays(-42).ToString("D") + ".");
+
+
             Console.ReadLine();
         }
     }
