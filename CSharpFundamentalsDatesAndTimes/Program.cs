@@ -22,7 +22,17 @@ namespace CSharpFundamentalsDatesAndTimes
             Console.WriteLine(myValue.ToString("D"));
 
             //same thing but with invariant culture
-            Console.WriteLine(myValue.ToString("D", CultureInfo.InvariantCulture));
+            Console.WriteLine("using invaraint culture : " + myValue.ToString("D", CultureInfo.InvariantCulture));
+
+            //formatting the time in a standard way according to current culture
+            Console.WriteLine(myValue.ToString("T"));
+
+            //same using invariant culture
+            Console.WriteLine("using invaraint culture : " + myValue.ToString("T", CultureInfo.InvariantCulture));
+
+            //display the date 3 days from now
+            Console.WriteLine("The date three days from now will be " + myValue.AddDays(3).ToString("D"));
+
 
             Console.ReadLine();
         }
