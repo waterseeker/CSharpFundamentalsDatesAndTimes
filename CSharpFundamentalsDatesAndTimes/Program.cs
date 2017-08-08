@@ -13,6 +13,8 @@ namespace CSharpFundamentalsDatesAndTimes
             //ToString("d") does the same thing. 
             Console.WriteLine(myValue.ToString("d"));
 
+            Console.WriteLine(myValue.ToString("t"));
+
             Console.ReadLine();
         }
     }
