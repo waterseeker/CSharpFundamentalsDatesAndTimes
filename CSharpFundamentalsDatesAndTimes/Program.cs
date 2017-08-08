@@ -42,6 +42,10 @@ namespace CSharpFundamentalsDatesAndTimes
             //display just the month number
             Console.WriteLine(myValue.Month.ToString());
 
+            //assign a date to a DateTime and then do stuff with it
+            DateTime birthdayOfBob = new DateTime(1969, 12, 7);
+            Console.WriteLine("Bob's birthday was on " + birthdayOfBob.ToString("D") + "." + "\nThat was a " + birthdayOfBob.DayOfWeek + ".");
+
             Console.ReadLine();
         }
     }
